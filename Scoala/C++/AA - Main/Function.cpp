@@ -87,8 +87,9 @@ int Produsul_Divizorilor_Proprii(int x)
     return p;
 }
 
-int Afisare_al_N-Lea_Termen_Fibonacci(int n)
+int Afisare_al_N_Lea_Termen_Fibonacci(int n)
 {
+    int T;
     if (n==1||n==2)
         return 1;
     else
@@ -108,6 +109,7 @@ int Afisare_al_N-Lea_Termen_Fibonacci(int n)
 
 void Afisare_Primii_n_Termani_Fibonacci (int n)
 {
+    int T;
     if(n==1)
         cout<<1;
     else
@@ -127,6 +129,7 @@ void Afisare_Primii_n_Termani_Fibonacci (int n)
 
 void Verificare_Daca_X_Apartine_Fibonacci (int n)
 {
+    int T;
     if(n==1)
         cout<<1;
     else
@@ -399,3 +402,4 @@ void Stergere_Vector_Element(int A[100], int n , int p)
     A[i] = A[i+1];
     n --;
 }
+*/
