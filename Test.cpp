@@ -1,4 +1,1 @@
-/*
-Trimis de pe pc
-Trimis de pe sv
-*/
+
