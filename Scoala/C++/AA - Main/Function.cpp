@@ -10,7 +10,7 @@ using namespace std;
 
 /*
  std::ifstream fin(".in")
- std::ofstram fout (".out")
+ std::ofstream fout (".out")
 */
 
 
@@ -184,35 +184,6 @@ int Oglindit(int k)
         k/=10;
     }
     return ogli;
-}
-
-int Verif_Palindrom (int k) 
-{
-   if (k == Oglindit(k)) return 1;
-   else return 0;
-}
-
-int Verif_Prim (int k) 
-{
-    if (k < 2) 
-    {
-        return 0;
-    }
-    else {
-        if (k!=2 && k% 2 ==0)
-        {return 0;
-        }
-        else {
-            for (int d = 3; d*d <= k; d=d+2) 
-            {
-                if (k % d == 0) 
-                {
-                    return 0;
-                }
-            }
-        }
-    }
-    return 1;
 }
 
 
