@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 int main()
 {
     int n,v[101],i,ok=1;
