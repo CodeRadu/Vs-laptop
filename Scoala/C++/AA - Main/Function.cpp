@@ -278,20 +278,40 @@ return cmmc;
 }
 
 
-void Citire_Vector(int & n, int x[])
+void Citire_Vector_Unidimensional(int & n, int x[])
 {
     cin  >> n;  
     for(int i = 0 ; i < n ; ++ i)
         cin >> x[i];
 }
 
-void Afisare_Vector(int n, int x[])
+void Afisare_Vector_Unidimensional(int n, int x[])
 {
+    
     for(int i = 0 ; i < n ; ++ i)
         cout << x[i] << " ";
 }
 
-void Schimbare_Linii(int A[][20], int lin, int col, int l1, int l2)
+void Inserare_In_Vector_Unidimensional_la_Punctul_k(int v[] , int &marime , int k, int numarx) {
+    for (int i =marime ; i >=k; i--) {
+        v[i+1] = v[i];
+    }
+    v[k] = numarx;
+        marime++;
+}
+
+void Stergere_In_Vector_Unidimensional_la_Punctul_k(int v[] , int &marime , int k) {
+    int i;
+    if(k<=marime) {
+        for (i = k; i<=marime-1; i++) {
+            v[i] = v[i+1];
+        }
+        marime--;
+    }
+    
+}
+
+void Schimbare_Linii_Bidi(int A[][20], int lin, int col, int l1, int l2)
 {
 	int j;
 	for (j = 0; j <col; j++)
@@ -341,7 +361,7 @@ for (int i = lx; i> l1; i--)
 
 
 /**
-void Citire_Vector_bidi (int A, int i , int j,int lin , int col ) 
+void Citire_Vector_bidi (int A[][], int i , int j,int lin , int col ) 
 {
     	for (i = 0; i < lin; i++)
 	{
@@ -352,7 +372,7 @@ void Citire_Vector_bidi (int A, int i , int j,int lin , int col )
 	}
 }
 
-void Afisare_Vector_bidi (int A[100], int i , int j,int lin , int col ) 
+void Afisare_Vector_bidi (int A[100][], int i , int j,int lin , int col ) 
 {
 
     	for (i = 0; i < lin; i++)
@@ -362,15 +382,5 @@ void Afisare_Vector_bidi (int A[100], int i , int j,int lin , int col )
 			cout << A[i][j];
         }
 	}
-}
-
-
-
-void Stergere_Vector_Element(int A[100], int n , int p) 
-{
-    int i = p;
-    for(i; i < n - 1; i ++)
-    A[i] = A[i+1];
-    n --;
 }
 */
