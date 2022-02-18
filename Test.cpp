@@ -7,3 +7,4 @@
 
 
 // Vlad este nub
+//elu
