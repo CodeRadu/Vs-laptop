@@ -3,3 +3,7 @@
 // de pe laptor
 // de pe lap
 // de pe git
+
+
+
+// Vlad este nub
