@@ -360,9 +360,10 @@ for (int i = lx; i> l1; i--)
 }
 
 
-/**
-void Citire_Vector_bidi (int A[][], int i , int j,int lin , int col ) 
+
+void Citire_Vector_bidi (int i, int A[100000][100000],  int j,int lin , int col ) 
 {
+    
     	for (i = 0; i < lin; i++)
 	{
 		for (j = 0; j < col; j++) 
@@ -372,7 +373,7 @@ void Citire_Vector_bidi (int A[][], int i , int j,int lin , int col )
 	}
 }
 
-void Afisare_Vector_bidi (int A[100][], int i , int j,int lin , int col ) 
+void Afisare_Vector_bidi (int A[100000][100000], int i , int j,int lin , int col ) 
 {
 
     	for (i = 0; i < lin; i++)
@@ -383,4 +384,3 @@ void Afisare_Vector_bidi (int A[100][], int i , int j,int lin , int col )
         }
 	}
 }
-*/
