@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    int n;
+    cin>>n;
+    int factor=2;
+    int p;
+    int k=0;
+    while(n>1)
+    {
+        p=0;
+        while(n%factor==0)
+        {
+            n=n/factor;
+            p++;
+        }
+        if(p)
+            k++;
+        factor++;
+    }
+    if(k)
+        cout<<k;
+    else
+        cout<<"nu exista";
+}

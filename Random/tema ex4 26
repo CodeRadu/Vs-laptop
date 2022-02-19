@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    int nr;
+    cin>>nr;
+    int pr;
+    cin>>pr;
+    int factor=2;
+    int p;
+    int k=0;
+    bool cond=false;
+    while(nr>1)
+    {
+        p=0;
+        while(nr%factor==0)
+        {
+            nr=nr/factor;
+            p++;
+        }
+        if(p)
+            if(pr==factor)
+                cond=true;
+        factor++;
+    }
+    if(cond)
+        cout<<"DA";
+    else
+        cout<<"NU";
+}

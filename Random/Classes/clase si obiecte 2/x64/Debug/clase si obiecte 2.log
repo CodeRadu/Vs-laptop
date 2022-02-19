@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\C++\CEX\clase si obiecte 2\Source.cpp(39,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  clase si obiecte 2.vcxproj -> D:\C++\CEX\clase si obiecte 2\x64\Debug\clase si obiecte 2.exe

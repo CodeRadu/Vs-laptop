@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1643448036 source:d:\c++\problema sosea\main.cpp
+	<iostream>
+	<fstream>
+
