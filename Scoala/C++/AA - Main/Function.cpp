@@ -360,6 +360,31 @@ for (int i = lx; i> l1; i--)
 }
 
 
+int Highest_Powerof_2_Less_Than_n(int n)
+{
+    int res = 0;
+    for (int i=n; i>=1; i--)
+    {
+        if ((i & (i-1)) == 0)
+        {
+            res = i;
+            break;
+        }
+    }
+    return res;
+}
+
+void Descompunere_In_Puteri_Ale_Lui_2 (int k) {
+    while (k != 0) {
+        cout << Highest_Powerof_2_Less_Than_n(k);
+        k = k - Highest_Powerof_2_Less_Than_n(k);
+        if (k!=0) cout << "+";
+    }
+
+}
+
+
+/*
 
 void Citire_Vector_bidi (int i, int A[100000][100000],  int j,int lin , int col ) 
 {
@@ -384,3 +409,4 @@ void Afisare_Vector_bidi (int A[100000][100000], int i , int j,int lin , int col
         }
 	}
 }
+*/
