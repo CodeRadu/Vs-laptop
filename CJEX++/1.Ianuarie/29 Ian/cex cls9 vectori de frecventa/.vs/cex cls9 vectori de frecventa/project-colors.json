@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d294c0af-b97b-48d6-9599-2071fc44c3ab": {
+      "ProjectGuid": "d294c0af-b97b-48d6-9599-2071fc44c3ab",
+      "DisplayName": "cex cls9 vectori de frecventa",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

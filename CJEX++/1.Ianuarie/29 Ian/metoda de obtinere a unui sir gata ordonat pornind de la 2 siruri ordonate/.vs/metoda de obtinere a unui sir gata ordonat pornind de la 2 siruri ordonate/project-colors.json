@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3e9271a5-0b78-42e9-a48c-16d241057d43": {
+      "ProjectGuid": "3e9271a5-0b78-42e9-a48c-16d241057d43",
+      "DisplayName": "metoda de obtinere a unui sir gata ordonat pornind de la 2 siruri ordonate",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
