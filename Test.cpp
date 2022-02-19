@@ -1,10 +1,8 @@
-// Acest text este de pe pc
-// Acest text este de pe github
-// de pe laptor
-// de pe lap
-// de pe git
+#include <iostream>
+#include <algorithm>
+#include <math.h>
+#include <fstream>
+#include <climits>
+# include "C:\Users\Ticusan Titus\Desktop\Deale Mele\Vs code\New folder\Scoala\C++\AA - Main\Function.cpp"
+using namespace std;
 
-
-
-// Vlad este nub
-//elu
