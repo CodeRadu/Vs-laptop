@@ -1,11 +1,5 @@
 #include <iostream>
-#include <algorithm>
-#include <math.h>
-#include <fstream>
-#include <climits>
-# include "C:\Users\Ticusan Titus\Desktop\Deale Mele\Vs code\New folder\Scoala\C++\AA - Main\Function.cpp"
 using namespace std;
-
 int cif1(int nr)
 {
     while(nr)
@@ -18,11 +12,11 @@ int cif1(int nr)
 }
 int main()
 {
-    int n;
+    int n;  
     cin >> n;
     int x;
     int k=0;
-    int maxi;
+    int maxi=0;
     for(int i=1;i<=n;i++)
     {
          cin>>x;
@@ -30,11 +24,11 @@ int main()
             k++;
          else 
         {
+            if(k>maxi)
             maxi=k;
             k=0;
-        }
-
+        } 
     }
-    cout<<maxi;
-
+    ///verificam ultima secventa
+    cout<<max(k,maxi);
 }

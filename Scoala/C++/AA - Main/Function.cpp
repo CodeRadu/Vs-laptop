@@ -407,29 +407,29 @@ void Descompunere_In_Puteri_Ale_Lui_2_fast_boi(int x)
 }
 
 
-/*
 
-void Citire_Vector_bidi (int i, int A[100000][100000],  int j,int lin , int col ) 
+
+void Citire_Vector_bidi ( int A[100][100],int lin , int col ) 
 {
     
-    	for (i = 0; i < lin; i++)
+    	for (int i = 0; i < lin; i++)
 	{
-		for (j = 0; j < col; j++) 
+		for (int j = 0; j < col; j++) 
         {
 			cin >> A[i][j]; 
         }
 	}
 }
 
-void Afisare_Vector_bidi (int A[100000][100000], int i , int j,int lin , int col ) 
+void Afisare_Vector_bidi (int A[100][100],int lin , int col ) 
 {
 
-    	for (i = 0; i < lin; i++)
-	{
-		for (j = 0; j < col; j++)
+    	for (int i = 0; i < lin; i++)
+	{   cout << endl;
+		for (int j = 0; j < col; j++)
         {
-			cout << A[i][j];
+			cout << A[i][j] << " ";
         }
 	}
 }
-*/
+
