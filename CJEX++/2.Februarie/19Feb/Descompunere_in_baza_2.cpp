@@ -29,9 +29,28 @@ void Descompunere_In_Puteri_Ale_Lui_2 (int k) {
 
 }
 
+
+
+
+void Descompunere_In_Puteri_Ale_Lui_2_fast(int x)
+{
+    int exp;
+    while(x)
+    {
+        exp=(int)log2(x);
+        cout<<(int)pow(2,exp)<<" ";
+        x=x-(int)pow(2,exp);
+    }
+}
+
+
+
+
+
 int main  () {
 int n = 13;
 Descompunere_In_Puteri_Ale_Lui_2(n);
-
+cout << endl;
+Descompunere_In_Puteri_Ale_Lui_2_fast(n);
 }
 // elu

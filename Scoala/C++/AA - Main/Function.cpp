@@ -383,7 +383,7 @@ void Descompunere_In_Puteri_Ale_Lui_2 (int k) {
 
 }
 
-void Descompunere_In_Puteri_Ale_Lui_2_fast(int x)
+void Descompunere_In_Puteri_Ale_Lui_2_fast_boi(int x)
 {
     int exp;
     while(x)
