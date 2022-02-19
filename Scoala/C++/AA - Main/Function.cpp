@@ -358,7 +358,19 @@ for (int i = lx; i> l1; i--)
 }
 
 }
-
+int Log2_De_N(int n)
+{
+    int res = 0;
+    for (int i=n; i>=1; i--)
+    {
+        if ((i & (i-1)) == 0)
+        {
+            res = i;
+            break;
+        }
+    }
+    return res;
+}
 
 int Highest_Powerof_2_Less_Than_n(int n)
 {
