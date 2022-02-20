@@ -22,21 +22,23 @@ double avocado = 6.0221515 * pow(10, 23);
 // ***************************
 // functii .
 
-
-int Verif_Prim (int k) 
+int Verif_Prim(int k)
 {
-    if (k < 2) 
+    if (k < 2)
     {
         return 0;
     }
-    else {
-        if (k!=2 && k% 2 ==0)
-        {return 0;
+    else
+    {
+        if (k != 2 && k % 2 == 0)
+        {
+            return 0;
         }
-        else {
-            for (int d = 3; d*d <= k; d=d+2) 
+        else
+        {
+            for (int d = 3; d * d <= k; d = d + 2)
             {
-                if (k % d == 0) 
+                if (k % d == 0)
                 {
                     return 0;
                 }
@@ -46,30 +48,33 @@ int Verif_Prim (int k)
     return 1;
 }
 
-
-int Egal (int k) {
-    int aux,imp, ok = 0;
-    while(k) {
+int Egal(int k)
+{
+    int aux, imp, ok = 0;
+    while (k)
+    {
         aux = k % 10;
         k = k / 10;
 
-        if (ok == 0) {
-            if (aux % 2 == 1) {
+        if (ok == 0)
+        {
+            if (aux % 2 == 1)
+            {
                 imp = aux;
                 ok++;
             }
         }
 
-        if (aux % 2 == 1) {
-            if (aux != imp) {
+        if (aux % 2 == 1)
+        {
+            if (aux != imp)
+            {
                 return 0;
             }
         }
-    } // 7727470  7921470 
+    } // 7727470  7921470
     return 1;
-
 }
-
 
 int Ultima_Cifre_Para(int n)
 {
@@ -86,7 +91,6 @@ int Ultima_Cifre_Para(int n)
     }
     return cpar;
 }
-
 
 int Suma_Cif_Impare(int n)
 {
