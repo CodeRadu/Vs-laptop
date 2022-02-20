@@ -9,11 +9,13 @@ Ex : 1234567 -- > 6 ; 1357 -- > -1
 3. Să se scrie funcți nrcif care primeşte doi parametri, n şi k şi returnează numărul 
 de cifre ale lui n care divid pe k .
 
+
 4. Subprogramul multiplu are un singur parametru, n , prin care primește un număr 
-natural ( n ∈ [1,10 4 ] ). Subprogramul returnează cel mai mic multiplu nenul al lui 
+natural . Subprogramul returnează cel mai mic multiplu nenul al lui 
 n cu proprietatea că este pătrat perfect. 
 Exemplu :
 Dacă n=72 sau n=144 , subprogramul returnează numărul 144 ( 144=12^2).
+
 
 5. Subprogramul Egal are un parametru, n, prin care primeşte un număr natural cu 
 cel puțin o cifră impară (nÎ[10,109]). Subprogramul returnează valoarea 1 dacă toate 
