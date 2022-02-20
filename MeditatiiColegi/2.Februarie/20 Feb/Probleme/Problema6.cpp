@@ -5,10 +5,29 @@
 #include <climits>
 # include "C:\Users\Ticusan Titus\Desktop\Deale Mele\Vs code\New folder\Scoala\C++\AA - Main\Function.cpp"
 using namespace std;
-//  😀👍 ⚠️     
-
-int Verif_Prim (int k){
-
+//  😀👍 ⚠️    
+ 
+int Verif_Prim (int k) 
+{
+    if (k < 2) 
+    {
+        return 0;
+    }
+    else {
+        if (k!=2 && k% 2 ==0)
+        {return 0;
+        }
+        else {
+            for (int d = 3; d*d <= k; d=d+2) 
+            {
+                if (k % d == 0) 
+                {
+                    return 0;
+                }
+            }
+        }
+    }
+    return 1;
 }
 
 int Aproape_Prim (int k) {

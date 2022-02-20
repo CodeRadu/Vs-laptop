@@ -22,6 +22,31 @@ double avocado = 6.0221515 * pow(10, 23);
 // ***************************
 // functii .
 
+
+int Verif_Prim (int k) 
+{
+    if (k < 2) 
+    {
+        return 0;
+    }
+    else {
+        if (k!=2 && k% 2 ==0)
+        {return 0;
+        }
+        else {
+            for (int d = 3; d*d <= k; d=d+2) 
+            {
+                if (k % d == 0) 
+                {
+                    return 0;
+                }
+            }
+        }
+    }
+    return 1;
+}
+
+
 int Egal (int k) {
     int aux,imp, ok = 0;
     while(k) {
