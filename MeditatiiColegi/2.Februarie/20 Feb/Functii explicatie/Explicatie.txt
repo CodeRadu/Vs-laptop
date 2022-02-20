@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+tip void / int 
+
+void = nu returneaza nimic
+int = returneaza
+
+nume 
+SumaDivizori
+
+( variabile )
+
+{
+
+}
+
+int SumaDivizori (     int p , int k  ) {
+
+
+
+
+return 1;
+return 0;
+}
+
+0 - fals
+1 - adev
+
+
+int main () {
+
+SumaDivizori(10,a)
+
+if (0) {
+
+}
+if (1) {
+
+}
+
+
+if (Verif_prim(10, a)) {
+
+}
+
+
+}
