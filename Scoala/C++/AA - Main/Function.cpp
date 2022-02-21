@@ -243,8 +243,10 @@ int to_binary_2(int x)
     cout << "\b\b  ";
 }
 
-int Verif_Palindrom (int n) {
-    if (n == Oglindit(n)) return 1;
+int Verif_Palindrom(int n)
+{
+    if (n == Oglindit(n))
+        return 1;
     return 0;
 }
 
