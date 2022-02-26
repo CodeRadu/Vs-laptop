@@ -1,5 +1,5 @@
 /*
-    functie care se autoapeleaza = functie recursiva
+    functie care se autoapeleaza = functie recursiva :)
 
 */
 #include <iostream>

@@ -7,8 +7,8 @@
 using namespace std;
 
 /*
- std::ifstream fin(".in")
- std::ofstream fout (".out")
+ std::ifstream fin(".in");
+ std::ofstream fout (".out");
 */
 
 // *************************
