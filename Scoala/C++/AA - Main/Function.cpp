@@ -48,6 +48,30 @@ int Verif_Prim(int k)
     return 1;
 }
 
+int Cel_Mai_Mare_Numar_Dupa_Eliminarea_a_K_Cifre(int n, int k)
+{
+
+    for (int j = 0; j < k; j++)
+    {
+
+        int ans = 0;
+        int i = 1;
+
+        while (n / i > 0)
+        {
+
+            int temp = (n / (i * 10)) * i + (n % i);
+            i *= 10;
+
+            ans = max(ans, temp);
+        }
+        n = ans;
+    }
+    
+    return n;
+}
+
+
 int Egal(int k)
 {
     int aux, imp, ok = 0;
