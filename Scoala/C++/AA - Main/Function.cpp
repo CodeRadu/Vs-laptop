@@ -48,6 +48,102 @@ int Verif_Prim(int k)
     return 1;
 }
 
+int Prim_Slow(int k)
+{
+    int d = 2;
+    for (int i = 2; i <= k / 2; i++)
+    {
+        if (k % i == 0)
+            d++;
+    }
+
+    if (d == 2)
+        return 1;
+
+    return 0;
+}
+
+int Ordonare_Vector_Uni_Crescator(int v[], int n)
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            if (v[i] > v[j])
+            {
+                swap(v[i], v[j]);
+            }
+        }
+    }
+}
+
+int Ordonare_Vector_Uni_DesCrescator(int v[], int n)
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            if (v[i] < v[j])
+            {
+                swap(v[i], v[j]);
+            }
+        }
+    }
+}
+
+int Ordonare_Vector_Uni_Crescator_pt_prim(int v[], int n)
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            /// 5 6 7 8 9 11 3
+            /// 3 6 7 8 9 11 5
+            /// 3 6 7 8 9 11 5
+            /// 3 6 5 8 9 11 7
+            /// 3 6 5 8 9 7 11
+            if (Prim_Slow(v[i]) && Prim_Slow(v[j]))
+            {
+
+                if (v[i] < v[j])
+                {
+                    swap(v[i], v[j]);
+                }
+            }
+        }
+    }
+}
+
+int Ordonare_Vector_Uni_Crescator_Pt_Pare_Si_invers_impare(int v[], int n)
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            if (v[i] % 2 == 0 && v[j] % 2 == 0)
+            {
+                if (v[i] > v[j])
+                {
+                    swap(v[i], v[j]);
+                }
+            }
+
+            if (v[i] % 2 == 1 && v[j] % 2 == 1)
+            {
+
+                if (v[i] < v[j])
+                {
+                    swap(v[i], v[j]);
+                }
+            }
+        }
+    }
+}
+
 int Cel_Mai_Mare_Numar_Dupa_Eliminarea_a_K_Cifre(int n, int k)
 {
 
@@ -67,10 +163,9 @@ int Cel_Mai_Mare_Numar_Dupa_Eliminarea_a_K_Cifre(int n, int k)
         }
         n = ans;
     }
-    
+
     return n;
 }
-
 
 int Egal(int k)
 {
