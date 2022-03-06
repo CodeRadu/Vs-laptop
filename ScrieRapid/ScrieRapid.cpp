@@ -9,5 +9,10 @@ using namespace std;
 
 
 int main () {
-    cout << " ======================= ";
+    long long s,nr = 2;
+    for (int i = 1; i <= 100 ; i++) {
+        s = s + floor(nr/7);
+        nr= nr *2;
+        cout << nr << " ";
+    }
 }
