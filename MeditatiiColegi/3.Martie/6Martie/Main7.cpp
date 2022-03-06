@@ -65,7 +65,7 @@ int main()
     int c = 0;
     for (int i = 1; i <= n - 1; i++)
     {
-        if (nrdediv(k[i]) == p)
+        if (nrdediv(k[i]) == p && k[i] != 1)
             c++;
     }
     fout << "c) ";
