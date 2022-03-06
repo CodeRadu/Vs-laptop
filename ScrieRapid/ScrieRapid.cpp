@@ -7,12 +7,12 @@
 using namespace std;
 //  😀👍 ⚠️     
 
+int Cacat (int &n) {
+    n++;
+    return 0;
+}
 
-int main () {
-    long long s,nr = 2;
-    for (int i = 1; i <= 100 ; i++) {
-        s = s + floor(nr/7);
-        nr= nr *2;
-        cout << nr << " ";
-    }
+int main() {
+    int n = 7;
+    cout << n;
 }
