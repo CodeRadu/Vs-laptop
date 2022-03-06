@@ -638,33 +638,52 @@ void Afisare_Vector_bidi(int A[100][100], int lin, int col)
     }
 }
 
-int Afisare_Maxim_Din_Vector_Unidimensional(int v[] , int n , int &PozitieMaxima) {
+int Afisare_Maxim_Din_Vector_Unidimensional(int v[], int n, int &PozitieMaxima)
+{
 
     int maxi = v[0];
 
-    for (int i = 0 ; i < n ; i++) {
-        if (v[i] > maxi) {
+    for (int i = 0; i < n; i++)
+    {
+        if (v[i] > maxi)
+        {
             maxi = v[i];
             PozitieMaxima = i;
         }
     }
 
-
     return maxi;
 }
 
-
-int Afisare_Minim_Din_Vector_Unidimensional(int v[] , int n , int &PozitieMinima) {
+int Afisare_Minim_Din_Vector_Unidimensional(int v[], int n, int &PozitieMinima)
+{
 
     int mini = v[0];
 
-    for (int i = 0 ; i < n ; i++) {
-        if (v[i] < mini) {
+    for (int i = 0; i < n; i++)
+    {
+        if (v[i] < mini)
+        {
             mini = v[i];
             PozitieMinima = i;
         }
     }
 
-
     return mini;
+}
+
+void Ordonare_Descrescatoare_Unidimensional(int v[], int n)
+{
+    for (int i = 1; i <= n - 1; i++)
+        for (int j = i + 1; j <= n; j++)
+            if (v[i] < v[j])
+                swap(v[i], v[j]);
+}
+
+void Ordonare_Crescatoare_Unidimensional(int v[], int n)
+{
+    for (int i = 1; i <= n - 1; i++)
+        for (int j = i + 1; j <= n; j++)
+            if (v[i] > v[j])
+                swap(v[i], v[j]);
 }

@@ -36,6 +36,17 @@ int Prim_Slow(int k)
     return 0;
 }
 
+int nrmax(int v[],int n)
+{
+    int maxi=INT_MIN;
+    for(int i=1;i<=n;i++)
+        {if(v[i]>maxi && v[i]%10==7)
+           maxi=v[i];
+        }
+
+   return maxi;
+}
+
 int main()
 {
     int n, v[1001];
@@ -67,4 +78,6 @@ int main()
 
 
     cout << "b)" << endl;
+    cout << nrmax(v,n) << endl;
+    
 }
