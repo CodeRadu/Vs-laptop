@@ -1,5 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
-int main(){
-system("c:\\windows\\system32\\shutdown /s");
-return 0;}
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n = 3,s=2,m;
+    //  cin>>n;
+
+    for(int i=1;i<=n;i++) {
+        cout<<m<<" ";
+        m=s+2;
+        s+=2;
+    }
+}
