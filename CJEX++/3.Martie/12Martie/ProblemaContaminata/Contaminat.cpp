@@ -7,7 +7,6 @@ using namespace std;
 //  😀👍 ⚠️
 // @Titus
 
-
 int main()
 {
     char A[101][101];
@@ -28,20 +27,18 @@ int main()
         cout << endl;
         for (j = 1; j <= m; j++)
         {
-            cout << A[i][j] << " ";
+            // cout << A[i][j] << " ";
         }
     }
 
-    cout << endl << endl << endl;
-
     bool conditie = true;
-    
+
     while (conditie)
     {
         conditie = false;
-        for (i = 1; i <= n; i++)
+        for (i = 1; i <= n; i = i + 2)
         {
-            for (j = 1; j <= m; j++)
+            for (j = 1; j <= m; j = j + 2)
             {
 
                 if (A[i][j] == 'C')
@@ -68,6 +65,11 @@ int main()
                         A[i - 1][j] = 'C';
                         conditie = true;
                     }
+                }
+
+                if (A[i][j] == 'W' && ( A[i - 1][j] == 'C' || A[i + 1][j] == 'C' || A[i][j - 1] == 'C' || A[i][j + 1] == 'C') )
+                {
+                    A[i][j] = 'C';
                 }
             }
         }
