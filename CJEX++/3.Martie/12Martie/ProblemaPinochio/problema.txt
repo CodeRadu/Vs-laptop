@@ -1,0 +1,29 @@
+/*
+Pinochio
+În fiecare zi nelucratoare din saptamâna, Pinochio spune câte o minciuna datorita
+careia nasul acestuia creste cu câte p centimetri pe zi. Sâmbata si duminica, când vine
+bunicul Gepeto acasa, pentru a nu-l supara prea tare, Pinochio reuseste sa nu spuna nici o
+minciuna, ba chiar uitându-se în oglinda observa ca în fiecare din aceste zile lungimea
+nasului sau scade cu cate 1 centimetru pe zi. Când începe o noua saptamâna, ramânâd
+singur acasa Pinochio continua sirul minciunilor.
+Cerinta
+Care este dimensiunea nasului lui Pinochio dupa k zile stiind ca initial nasul sau
+masura n centimetri.
+Date de intrare
+De la tastatura se citesc n, p si k.
+Date de iesire
+Pe ecran se va afisa un singur numar natural, adica numarul de centimetri cerut de
+problema.
+Restrictii
+n>=1, 1 <= k <= 256, 1 <= p <= 100
+Exemplu
+Pentru
+n=2
+p=1
+k=8
+se va afisa
+6 cm
+Observatie
+Pentru orice exemplu zilele încep cu luni. Pe exemplul anterior zilele sunt luni, marti,
+miercuri, joi, vineri, sâmbata, duminica, luni.
+/*
